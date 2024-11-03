@@ -224,6 +224,7 @@
 .offcanvas-card-img{
     width: 10px;
     height: 150px;
+    object-fit: cover;
 }
 .d-block{
     height: 80vh;
