@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwigley&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.alert{
+    display: flex;
+    justify-content: center;
+    background-color: #7d7098 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+#alert-message{
+    color: #fff;
+    margin-top: 5px;
+}
+#btn-closed{
+    height: 1px;
+    width: 1px;
+}
+.color-container{
+    background-color: #f7f7f7;
+}
+.container-fluid, .navbar{
+    background-color: #fff;
+}
+#navbarNav{
+    display: flex;
+    justify-content: end;
+    margin-right: 20rem;
+}
+.navbar-brand{
+    display: flex;
+    font-size: 50px !important;
+    margin-left: 90px;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav-item{
+    font-weight: bold;
+    font-size: 17px;
+}
+.nav-link{
+    text-transform: uppercase;
+    margin: 0 .5rem;
+}
+.quote-container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+.quote2{
+    font-size: 30px;
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #7d7098;     
+}
+.container{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.pic-cards{
+    cursor: pointer;
+    &:hover{
+        opacity: 60%;
+    }
+}
+.round-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-wrap: wrap;
+    &:hover{
+        opacity: 60%;
+    }
+}
+.round-recipe-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    overflow-x: scroll;
+}
+.round-card-img{
+    border-radius: 50%;
+}
+.card-body{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.search-recipes{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.search-input{
+    width: 500px;
+    height: 45px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid black !important;
+    padding: 0 !important;
+}
+.or{
+    font-size: 30px;
+    color: gray;
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 2px;
+}
+.btn-recipes{
+    background-color: #7d7098;
+    padding: 10px 15px;
+    border: none;
+}
+.vert-card-title{
+    font-weight: bold;
+}
+.link-recipe{
+    color: #edb654;
+    font-size: 20px;
+    text-decoration: none;
+}
+.vert-card-img{
+    height: 100% !important;
+}
+.vert-text-para{
+    font-weight: normal;
+}
+.social-media-container{
+    height: 150px;
+    background-color: #7d7098;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25rem;
+}
+.social-media-section{
+    display: flex;
+
+    gap: .75rem;
+}
+.follow{
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+}
+.socialMediaTag{
+    width: 40px;
+    border-radius: 50%;
+}
+.name, .email{
+    height: 45px;
+    width: 200px;
+    padding-left: 5px;
+    outline: none;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.signup-heading{
+    display: flex;
+    font-size: 2rem;
+    color: #fff;
+}
+#signup-subHead{
+    font-family: "Qwigley", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+#email-subHead{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+}
+.btn-signup{
+    height: 45px;
+    width: 70px;
+    color: white;
+    background-color: #edb654;
+    border: none;
+}
+.input-section{
+    position: relative;
+    bottom: 1rem;
+}
+.offcanvas{
+    height: 80vh !important;
+}
+.offcanvas-input{
+    width: 90vw;
+    padding-left: 5px;
+    height: 35px;
+    margin-left: 25px;
+    border-radius: 30px;
+    outline: none;
+}
+.inner-searchBar-scrollCard{
+    display: flex;
+}
+.offcanvas-card-img{
+    width: 10px;
+    height: 150px;
+}
