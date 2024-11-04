@@ -14,7 +14,6 @@ btn.onclick = (event) => {
     }
     else if (username.value===myusername && password.value===mypassword){
         window.location.href = "../index.html";
-        login.style.display="none";
     }
     else {
         alert("Invalid username or password!");
