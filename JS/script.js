@@ -17,7 +17,7 @@ btn.onclick = (event) => {
         console.log("No Field entered")
     }
     else if (username.value===myusername && password.value===mypassword){
-        window.location.href = "https://prathammittal-tech.github.io/Recipe-Website/";
+        window.location.href = "/";
     }
     else {
         alert("Invalid username or password!");
