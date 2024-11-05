@@ -221,10 +221,15 @@
 }
 .inner-searchBar-scrollCard{
     display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.offcanvas-card{
+    width: 18rem;
 }
 .offcanvas-card-img{
-    width: 10px;
-    height: 150px;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
 }
 .d-block{

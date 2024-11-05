@@ -18,10 +18,8 @@ body{
     border: 2px solid #ff2770;
     box-shadow: 0 0 25px #ff2770;
 }
-h2, label, i, .link, .register-link{
-    color: #fff;
-}
 h2{
+    color: #fff;
     margin-bottom: 25px;
 }
 .form-box{
@@ -48,6 +46,7 @@ input{
     color: white;
 }
 label{
+    color: #fff;
     position: relative;
     top: -20px;
 
@@ -56,8 +55,9 @@ label{
     transition: .5s;
 }
 .form-box i{
+    color: #fff;
     position: relative;
-    top: -18px;
+    top: -20px;
     left: 65%;
 }
 
@@ -80,11 +80,13 @@ label{
     font-size: 16px;
 }
 .link{
+    color: #fff;
     margin-top: 25px;
     font-size: 17px;
     text-align: center;
 }
 .register-link{
+    color: #fff;
     color: #ff2770;
     text-decoration: none;
 }
