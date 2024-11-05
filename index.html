@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="Pics/favicon.jpg" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header>
@@ -18,31 +17,8 @@
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="btn-closed"></button>
     </div>
 
-    <!-- login -->
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary login-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
-
-<div class="modal fade modal-dialog modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html"><p>cOOkie</p>&nbsp;<p style="color: #7d7098;">rOOkie</p></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,16 +35,49 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Recipes</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active navbar-login " href="#">login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <li class="nav-item navbar-login" href="#">
+              <!-- Button trigger modal -->
+              <a class="nav-link active login-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class='bx bx-user-circle'></i></a>
+              <!-- Modal -->
+              <div class="modal fade login-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">LOGIN PAGE</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="wrapper">
+                        <div class="form-box">
+                            <h2 id="login-heading">Login</h2>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" required class="username">
+                                    <label>Username</label>
+                                    <i class='bx bxs-user'></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" required class="password">
+                                    <label>Password</label>
+                                    <i class='bx bxs-lock-alt'></i>
+                                </div>
+                                <button type="submit" class="btn login-link"><a>Login</a></button>
+                                <div class="link">
+                                    <p>Don't Have an account?</p><a href="#" class="register-link">Sign Up</a>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </div>
-  </nav>
+    </nav>
 
     </header>
     <main>

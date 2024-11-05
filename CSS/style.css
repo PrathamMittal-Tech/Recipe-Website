@@ -11994,7 +11994,8 @@ textarea.form-control-lg {
   background-color: #f7f7f7;
 }
 
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl, .navbar {
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
+.navbar {
   background-color: #fff;
 }
 
@@ -12021,6 +12022,110 @@ textarea.form-control-lg {
 .nav-link {
   text-transform: uppercase;
   margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.login-modal {
+  height: 90vh;
+  overflow-y: hidden;
+}
+
+a i {
+  font-size: 30px;
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+}
+
+.modal-body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+  width: 500px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+#login-heading {
+  margin-bottom: 60px;
+}
+
+.form-box {
+  padding-top: 50px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input {
+  height: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+label {
+  position: relative;
+  top: -20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.form-box i {
+  position: relative;
+  top: -27px;
+  left: 65%;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -50px;
+  color: #ff2770;
+}
+
+.btn {
+  height: 35px;
+  width: 300px;
+  border-radius: 30px;
+  outline: none;
+}
+
+.login-link {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid black;
+}
+.login-link:hover {
+  border: 2px solid black;
+}
+
+.link {
+  margin-top: 25px;
+  font-size: 17px;
+  display: flex;
+  gap: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register-link {
+  color: #ff2770;
+  text-decoration: none;
 }
 
 .quote-container {
@@ -12046,7 +12151,8 @@ textarea.form-control-lg {
   color: #7d7098;
 }
 
-.start-pic-card, .vertical-container {
+.start-pic-card,
+.vertical-container {
   display: flex;
   gap: 3rem;
   flex-wrap: wrap;
@@ -12103,16 +12209,6 @@ textarea.form-control-lg {
   padding: 0 !important;
 }
 
-.or {
-  font-size: 30px;
-  color: gray;
-  font-family: "Homemade Apple", cursive;
-  font-weight: 400;
-  font-style: normal;
-  position: relative;
-  top: 2px;
-}
-
 .btn-recipes {
   background-color: #7d7098;
   padding: 10px 15px;
@@ -12163,7 +12259,8 @@ textarea.form-control-lg {
   border-radius: 50%;
 }
 
-.name, .email {
+.name,
+.email {
   height: 45px;
   width: 200px;
   padding-left: 5px;
@@ -12307,6 +12404,13 @@ li a {
   text-decoration: none;
 }
 
+.list-group {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+}
+
 .socialMedia {
   margin-top: 50px;
   height: 60px;
@@ -12334,7 +12438,7 @@ li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #7D7098;
+  background-color: #7d7098;
   border-radius: 50px;
   padding: 15px;
   margin: 60px 150px 100px 0;

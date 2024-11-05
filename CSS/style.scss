@@ -1,38 +1,46 @@
 @import "~bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwigley&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwigley&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.alert{
+
+.alert {
     display: flex;
     justify-content: center;
     background-color: #7d7098 !important;
     margin-bottom: 0 !important;
     padding: 0 !important;
 }
-#alert-message{
+
+#alert-message {
     color: #fff;
     margin-top: 5px;
 }
-#btn-closed{
+
+#btn-closed {
     height: 1px;
     width: 1px;
 }
-.color-container{
+
+.color-container {
     background-color: #f7f7f7;
 }
-.container-fluid, .navbar{
+
+.container-fluid,
+.navbar {
     background-color: #fff;
 }
-#navbarNav{
+
+#navbarNav {
     display: flex;
     justify-content: end;
     margin-right: 20rem;
 }
-.navbar-brand{
+
+.navbar-brand {
     display: flex;
     font-size: 50px !important;
     margin-left: 90px;
@@ -40,76 +48,196 @@
     font-weight: 400;
     font-style: normal;
 }
-.nav-item{
+
+.nav-item {
     font-weight: bold;
     font-size: 17px;
 }
-.nav-link{
+
+.nav-link {
     text-transform: uppercase;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
 }
-.quote-container{
+
+.login-modal {
+    height: 90vh;
+    overflow-y: hidden;
+}
+
+a i {
+    font-size: 30px;
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+}
+
+.modal-body {
+    min-height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+#login-heading {
+    margin-bottom: 60px;
+}
+
+.form-box {
+    padding-top: 50px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+label {
+    position: relative;
+    top: -20px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.form-box i {
+    position: relative;
+    top: -27px;
+    left: 65%;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -50px;
+    color: #ff2770;
+}
+
+.btn {
+    height: 35px;
+    width: 300px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.login-link {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid black;
+    &:hover{
+        border: 2px solid black;
+    }
+}
+
+.link {
+    margin-top: 25px;
+    font-size: 17px;
+    display: flex;
+    gap: 0.25rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.register-link {
+    color: #ff2770;
+    text-decoration: none;
+}
+
+.quote-container {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.quote1{
+
+.quote1 {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
     font-family: "Kanit", sans-serif;
     font-style: normal;
 }
-.quote2{
+
+.quote2 {
     font-size: 30px;
     font-family: "Homemade Apple", cursive;
     font-weight: 400;
     font-style: normal;
-    color: #7d7098;     
+    color: #7d7098;
 }
-.start-pic-card, .vertical-container{
+
+.start-pic-card,
+.vertical-container {
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
 }
-.pic-cards{
+
+.pic-cards {
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         opacity: 60%;
     }
 }
-.round-card{
+
+.round-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-wrap: wrap;
-    &:hover{
+
+    &:hover {
         opacity: 60%;
     }
 }
-.round-recipe-container{
+
+.round-recipe-container {
     display: flex;
     gap: 2rem;
     justify-content: center;
     overflow-x: scroll;
 }
-.round-card-img{
+
+.round-card-img {
     border-radius: 50%;
 }
-.card-body{
+
+.card-body {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
 }
-.search-recipes{
+
+.search-recipes {
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-.search-input{
+
+.search-input {
     width: 500px;
     height: 45px;
     padding-left: 10px;
@@ -117,35 +245,32 @@
     border: 1px solid black !important;
     padding: 0 !important;
 }
-.or{
-    font-size: 30px;
-    color: gray;
-    font-family: "Homemade Apple", cursive;
-    font-weight: 400;
-    font-style: normal;
-    position: relative;
-    top: 2px;
-}
-.btn-recipes{
+
+.btn-recipes {
     background-color: #7d7098;
     padding: 10px 15px;
     border: none;
 }
-.vert-card-title{
+
+.vert-card-title {
     font-weight: bold;
 }
-.link-recipe{
+
+.link-recipe {
     color: #edb654;
     font-size: 20px;
     text-decoration: none;
 }
-.vert-card-img{
+
+.vert-card-img {
     height: 100% !important;
 }
-.vert-text-para{
+
+.vert-text-para {
     font-weight: normal;
 }
-.social-media-container{
+
+.social-media-container {
     height: 150px;
     background-color: #7d7098;
     display: flex;
@@ -153,65 +278,78 @@
     align-items: center;
     gap: 25rem;
 }
-.social-media-section{
+
+.social-media-section {
     display: flex;
 
-    gap: .75rem;
+    gap: 0.75rem;
 }
-.follow{
+
+.follow {
     color: #fff;
     font-weight: bold;
     position: relative;
     top: 7px;
 }
-.socialMediaTag{
+
+.socialMediaTag {
     width: 40px;
     border-radius: 50%;
 }
-.name, .email{
+
+.name,
+.email {
     height: 45px;
     width: 200px;
     padding-left: 5px;
     outline: none;
 }
-.input-container{
+
+.input-container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.signup-heading{
+
+.signup-heading {
     display: flex;
     font-size: 2rem;
     color: #fff;
 }
-#signup-subHead{
+
+#signup-subHead {
     font-family: "Qwigley", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 45px;
 }
-#email-subHead{
+
+#email-subHead {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     position: relative;
     top: 15px;
 }
-.btn-signup{
+
+.btn-signup {
     height: 45px;
     width: 70px;
     color: white;
     background-color: #edb654;
     border: none;
 }
-.input-section{
+
+.input-section {
     position: relative;
     bottom: 1rem;
 }
-.offcanvas{
+
+.offcanvas {
     height: 80vh !important;
 }
-.offcanvas-input{
+
+.offcanvas-input {
     width: 90vw;
     padding-left: 5px;
     height: 35px;
@@ -219,23 +357,28 @@
     border-radius: 30px;
     outline: none;
 }
-.inner-searchBar-scrollCard{
+
+.inner-searchBar-scrollCard {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
 }
-.offcanvas-card{
+
+.offcanvas-card {
     width: 18rem;
 }
-.offcanvas-card-img{
+
+.offcanvas-card-img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-.d-block{
+
+.d-block {
     height: 80vh;
 }
-.recipe-container{
+
+.recipe-container {
     height: 400px;
     display: flex;
     justify-content: center;
@@ -243,52 +386,69 @@
     align-items: center;
     background-color: #4d4d4d;
 }
-.top-recipes{
+
+.top-recipes {
     width: 450px;
 }
-.cookbook-heading{
+
+.cookbook-heading {
     text-transform: uppercase;
     color: #fff;
     font-size: 25px;
-    font-family: 'Arvo';
+    font-family: "Arvo";
     font-weight: bolder;
     font-weight: 400;
 }
-.down-recipe-container{
+
+.down-recipe-container {
     color: white;
     width: 500px;
 }
-.recipe-input{
+
+.recipe-input {
     height: 40px;
     padding-left: 8px;
     width: 200px;
     outline: none;
 }
-.recipe-submit{
+
+.recipe-submit {
     height: 40px;
     width: 55px;
     background-color: #edb654;
     color: #fff;
     border: none;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: space-between;
 }
-.footer-content{
+
+.footer-content {
     margin: 100px;
     display: flex;
     gap: 10rem;
 }
-.footer-content li{
+
+.footer-content li {
     list-style: none;
     margin: 10px 0;
 }
-li a{
+
+li a {
     color: grey;
     text-decoration: none;
 }
-.socialMedia{
+
+.list-group {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+}
+
+.socialMedia {
     margin-top: 50px;
     height: 60px;
     width: 150px;
@@ -296,47 +456,53 @@ li a{
     justify-content: center;
     align-items: center;
 }
-.socialMediaTag{
+
+.socialMediaTag {
     width: 30px;
     margin: 0 5px;
-
 }
-#about-title{
+
+#about-title {
     font-size: 15px;
     font-family: "Arvo", serif;
     font-weight: 400;
     font-style: normal;
 }
-.contact-us{
+
+.contact-us {
     height: 200px;
     width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #7D7098;
+    background-color: #7d7098;
     border-radius: 50px;
     padding: 15px;
     margin: 60px 150px 100px 0;
 }
-.contact-heading{
+
+.contact-heading {
     margin-top: 10px;
     font-size: 35px;
     color: #fff;
     display: flex;
     gap: 0.8rem;
 }
-#signup{
+
+#signup {
     font-family: "Whisper", cursive;
     font-weight: 400;
     font-style: normal;
 }
-#Email-Updates{
+
+#Email-Updates {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
 }
-#contact-input{
+
+#contact-input {
     height: 35px;
     width: 375px;
     border-radius: 30px;
