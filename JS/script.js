@@ -17,7 +17,7 @@ btn.onclick = (event) => {
         console.log("No Field entered")
     }
     else if (username.value===myusername && password.value===mypassword){
-        window.location.href = "/";
+        window.location.href = "/Recipe-Website/";
     }
     else {
         alert("Invalid username or password!");
