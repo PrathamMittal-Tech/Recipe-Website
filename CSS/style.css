@@ -12203,7 +12203,6 @@ label {
 .search-input {
   width: 500px;
   height: 45px;
-  padding-left: 10px;
   outline: none;
   border: 1px solid black !important;
   padding: 0 !important;
@@ -12473,4 +12472,9 @@ li a {
   padding-left: 10px;
   border: 1px solid #fff;
   outline: none;
+}
+
+.recipe-profile {
+  position: relative;
+  bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

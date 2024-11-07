@@ -65,7 +65,7 @@
     overflow-y: hidden;
 }
 
-a i {
+a i{
     font-size: 30px;
     position: relative;
     top: -2px;
@@ -240,7 +240,6 @@ label {
 .search-input {
     width: 500px;
     height: 45px;
-    padding-left: 10px;
     outline: none;
     border: 1px solid black !important;
     padding: 0 !important;
@@ -511,3 +510,10 @@ li a {
     border: 1px solid #fff;
     outline: none;
 }
+// recipe Pages
+
+.recipe-profile{
+    position: relative;
+    bottom: 15px;
+}
+
