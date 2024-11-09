@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwigley&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
@@ -61,7 +62,7 @@
 }
 
 .login-modal {
-    height: 90vh;
+    height: 80vh;
     overflow-y: hidden;
 }
 
@@ -470,7 +471,7 @@ li a {
 
 .contact-us {
     height: 200px;
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -510,10 +511,37 @@ li a {
     border: 1px solid #fff;
     outline: none;
 }
-// recipe Pages
 
-.recipe-profile{
-    position: relative;
-    bottom: 15px;
+// About Us Page
+
+.about-me-body{
+    display: flex;
+    margin-bottom: 45px;
 }
-
+.about-me-container{
+    background-color: #f2f2f2;
+    width: 85vw;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+.about-heading {
+    margin: 10px 0;
+    color: purple;
+    font-family: Domaine Display,Georgia,Cambria,Times New Roman,Times,serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.about-us-text{
+    text-wrap: pretty;
+}
+.about-web-body{
+    display: flex;
+    justify-content: end;
+}
+.about-us-image{
+    border-radius: 50%;
+}

@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwigley&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root,
@@ -12026,7 +12027,7 @@ textarea.form-control-lg {
 }
 
 .login-modal {
-  height: 90vh;
+  height: 80vh;
   overflow-y: hidden;
 }
 
@@ -12433,7 +12434,7 @@ li a {
 
 .contact-us {
   height: 200px;
-  width: 30vw;
+  width: 35vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12474,7 +12475,38 @@ li a {
   outline: none;
 }
 
-.recipe-profile {
-  position: relative;
-  bottom: 15px;
+.about-me-body {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.about-me-container {
+  background-color: #f2f2f2;
+  width: 85vw;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.about-heading {
+  margin: 10px 0;
+  color: purple;
+  font-family: Domaine Display, Georgia, Cambria, Times New Roman, Times, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.about-us-text {
+  text-wrap: pretty;
+}
+
+.about-web-body {
+  display: flex;
+  justify-content: end;
+}
+
+.about-us-image {
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
