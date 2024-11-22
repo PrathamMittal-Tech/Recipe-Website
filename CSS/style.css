@@ -12475,9 +12475,24 @@ li a {
   outline: none;
 }
 
+.round-card-recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.round-card-recipe-heading {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.round-card-recipe {
+  text-wrap: pretty;
+}
+
 .about-me-body {
   display: flex;
-  margin-bottom: 45px;
+  margin: 30px 0 45px 30px;
 }
 
 .about-me-container {
@@ -12505,6 +12520,7 @@ li a {
 .about-web-body {
   display: flex;
   justify-content: end;
+  margin-right: 30px;
 }
 
 .about-us-image {

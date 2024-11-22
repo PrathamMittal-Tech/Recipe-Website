@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
 }
-
 .alert {
     display: flex;
     justify-content: center;
@@ -255,8 +254,7 @@ label {
 .vert-card-title {
     font-weight: bold;
 }
-
-.link-recipe {
+.link-recipe{
     color: #edb654;
     font-size: 20px;
     text-decoration: none;
@@ -512,11 +510,12 @@ li a {
     outline: none;
 }
 
+
 // About Us Page
 
 .about-me-body{
     display: flex;
-    margin-bottom: 45px;
+    margin: 30px 0 45px 30px;
 }
 .about-me-container{
     background-color: #f2f2f2;
@@ -541,6 +540,7 @@ li a {
 .about-web-body{
     display: flex;
     justify-content: end;
+    margin-right: 30px;
 }
 .about-us-image{
     border-radius: 50%;

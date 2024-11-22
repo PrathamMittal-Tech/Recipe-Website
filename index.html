@@ -1,368 +1,261 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <title>Cookie Rookie</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="shortcut icon" href="Pics/favicon.jpg" type="image/x-icon">
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
-    <header>
-      <!-- DISMISSIBLE ALERT -->
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-      <p id="alert-message">OUR RECIPE, &nbsp;SIGN UP</p>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="btn-closed"></button>
-    </div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Cookie Rookie</title>
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="shortcut icon" href="Pics/favicon.jpg" type="image/x-icon">
 
-  <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html"><p class="main-heading" >cOOkie</p>&nbsp;<p  class="main-heading" style="color: #7d7098;">rOOkie</p></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="HTML/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Recipes</a>
-            </li>
-            <li class="nav-item navbar-login">
-              <!-- Button trigger modal -->
-              <a class="nav-link active login-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class='bx bx-user-circle'></i></a>
-              <!-- Modal -->
-              <div class="modal fade login-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="wrapper">
-                        <div class="form-box">
-                            <h2 id="login-heading">Login</h2>
-                            <form action="#">
-                                <div class="input-box">
-                                    <input type="text" required class="username">
-                                    <label>Username</label>
-                                    <i class='bx bxs-user'></i>
-                                </div>
-                                <div class="input-box">
-                                    <input type="password" required class="password">
-                                    <label>Password</label>
-                                    <i class='bx bxs-lock-alt'></i>
-                                </div>
-                                <button type="submit" class="btn login-link"><a>Login</a></button>
-                                <div class="link">
-                                    <p>Don't Have an account?</p><a href="#" class="register-link">Sign Up</a>
-                                    
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-    </header>
-    <main>
-    <!-- Quote -->
-    <pre class="quote-container">
+<body>
+	<header>
+		<!-- DISMISSIBLE ALERT -->
+		<div class="alert alert-primary alert-dismissible fade show" role="alert">
+			<p id="alert-message">OUR RECIPE, &nbsp;SIGN UP</p>
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="btn-closed"></button>
+		</div>
+
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<p class="main-heading">cOOkie</p>&nbsp;<p class="main-heading" style="color: #7d7098;">rOOkie</p>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="HTML/about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Recipes</a>
+						</li>
+						<li class="nav-item navbar-login">
+							<!-- Button trigger modal -->
+							<a class="nav-link active login-btn" data-bs-toggle="modal"
+								data-bs-target="#staticBackdrop"><i class='bx bx-user-circle'></i></a>
+							<!-- Modal -->
+							<div class="modal fade login-modal" id="staticBackdrop" data-bs-backdrop="static"
+								data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+								aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+												aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<div class="wrapper">
+												<div class="form-box">
+													<h2 id="login-heading">Login</h2>
+													<form action="#">
+														<div class="input-box">
+															<input type="text" required class="username">
+															<label>Username</label>
+															<i class='bx bxs-user'></i>
+														</div>
+														<div class="input-box">
+															<input type="password" required class="password">
+															<label>Password</label>
+															<i class='bx bxs-lock-alt'></i>
+														</div>
+														<button type="submit"
+															class="btn login-link"><a>Login</a></button>
+														<div class="link">
+															<p>Don't Have an account?</p><a href="#"
+																class="register-link">Sign Up</a>
+
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+	<main>
+		<!-- Quote -->
+		<pre class="quote-container">
       <p class="quote1">simple recipe made for   </p><p class="quote2">real, actual everyday life.</p>
     </pre>
-    <div class="color-container">
-    <!--Starting Picture Cards -->
-    <div class="container pt-4 start-pic-card">
-          <div class="card" style="width: 18rem;">
-            <img src="Pics/Nav-1.jpg" class="pic-cards" class="card-img-top" alt="...">
-          </div>
+		<div class="color-container">
+			<!--Starting Picture Cards -->
+			<div class="container pt-4 start-pic-card">
+				<div class="card" style="width: 18rem;">
+					<img src="Pics/Nav-1.jpg" class="pic-cards" class="card-img-top" alt="...">
+				</div>
 
-          <div class="card" style="width: 18rem;">
-            <img src="Pics/Nav-2.jpg" class="pic-cards" class="card-img-top" alt="...">
-          </div>
+				<div class="card" style="width: 18rem;">
+					<img src="Pics/Nav-2.jpg" class="pic-cards" class="card-img-top" alt="...">
+				</div>
 
-          <div class="card" style="width: 18rem;">
-            <img src="Pics/Nav-3.jpg" class="pic-cards" class="card-img-top" alt="...">
-          </div>
+				<div class="card" style="width: 18rem;">
+					<img src="Pics/Nav-3.jpg" class="pic-cards" class="card-img-top" alt="...">
+				</div>
 
-          <div class="card" style="width: 18rem;">
-            <img src="Pics/Nav-4.jpg" class="pic-cards" class="card-img-top" alt="...">
-          </div>
-          
-    </div>
+				<div class="card" style="width: 18rem;">
+					<img src="Pics/Nav-4.jpg" class="pic-cards" class="card-img-top" alt="...">
+				</div>
 
-    <!-- Round Picture Cards -->
-    <div class="round-recipe-container mt-5">
-      <div class="round-card">
-        <img src="Pics/roundNav-1.jpg" alt="" class="round-card-img">
-        <div class="card-body">Quick & Easy</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-2.jpg" alt="" class="round-card-img">
-        <div class="card-body">Dinner</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-3.jpg" alt="" class="round-card-img">
-        <div class="card-body">Vegetarian</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-4.jpg" alt="" class="round-card-img">
-        <div class="card-body">Healthy</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-5.jpg" alt="" class="round-card-img">
-        <div class="card-body">Instant Pot</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-6.jpg" alt="" class="round-card-img">
-        <div class="card-body">Vegan</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-7.jpg" alt="" class="round-card-img">
-        <div class="card-body">Meal Prep</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-8.jpg" alt="" class="round-card-img">
-        <div class="card-body">Soups</div>
-      </div>
-      <div class="round-card">
-        <img src="Pics/roundNav-9.jpg" alt="" class="round-card-img">
-        <div class="card-body">Salads</div>
-      </div>
-    </div>
+			</div>
 
-    <!-- Search Bar -->
-    <div class="search-recipes">
-      <!-- Outer part of Search Bar -->
-      <input class="btn search-input" type="text" placeholder="Search our recipes" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-      <!-- Inner Part of Search Bar -->
-      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-      <button type="button" class="btn-close text-reset m-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<!-- Round Picture Cards -->
+			<div class="round-recipe-container mt-5">
+				<div class="round-card">
+					<a href="HTML/RoundRecipes1.html"><img src="Pics/roundNav-1.jpg" alt="" class="round-card-img quick-recipe-btn"></a>
+					<div class="card-body">Quick & Easy</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-2.jpg" alt="" class="round-card-img dinner-recipe-btn"></a>
+					<div class="card-body">Dinner</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-3.jpg" alt="" class="round-card-img vegetarian-recipe-btn"></a>
+					<div class="card-body">Vegetarian</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-4.jpg" alt="" class="round-card-img healhty-recipe-btn"></a>
+					<div class="card-body">Healthy</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-5.jpg" alt="" class="round-card-img instant-pot-recipe"></a>
+					<div class="card-body">Instant Pot</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-6.jpg" alt="" class="round-card-img vegan-recipe-btn"></a>
+					<div class="card-body">Vegan</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-7.jpg" alt="" class="round-card-img meal-prep-recipe-btn"></a>
+					<div class="card-body">Meal Prep</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-8.jpg" alt="" class="round-card-img soups-recipe-btn"></a>
+					<div class="card-body">Soups</div>
+				</div>
+				<div class="round-card">
+					<a href=""><img src="Pics/roundNav-9.jpg" alt="" class="round-card-img salads-recipe-btn"></a>
+					<div class="card-body">Salads</div>
+				</div>
+			</div>
 
-      <div class="offcanvas-body small">
-      <input type="text" placeholder="Search for a recipe" class="offcanvas-input">
+			<!-- vertical Cards -->
+			<div class="container mt-5 vertical-container">
+				<div class="card vert-card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="Pics/Vertical Card-1.jpg" class="img-fluid rounded-start vert-card-img" alt="...">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body verticalCards">
+								<h5 class="card-title vert-card-title">Bang Bang Salmon with Avocado Cucumber Salsa</h5>
+								<p class="card-text vert-text-para">Bang Bang Salmon! Creamy, sweet, savory, and punchy.
+									Served with some steamy rice and an avocado cucumber salsa. Weeknight perfection!
+								</p>
+								<a href="" class="link-recipe">Go to Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-      <!-- Card -->
-      <div class="container mt-4 inner-searchBar-scrollCard">
+				<div class="card vert-card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="Pics/Vertical Card-2.jpg" class="img-fluid rounded-start vert-card-img" alt="...">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body verticalCards">
+								<h5 class="card-title vert-card-title">Scallion Pancake with Eggs</h5>
+								<p class="card-text vert-text-para">A frozen scallion pancake, loaded with eggs,
+									spinach, avocado and chili crisp! A five minute meal perfect for breakfast, lunch,
+									or dinner!</p>
+								<a href="" class="link-recipe">Go to Recipe</a>
 
-        <div class="card" style="width: 18rem;">
-          <img src="Pics/Canvas-1.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Soft Chocolate Chip Cookies</p>
-          </div>
-        </div>
-      <!-- Card -->
-      <!-- Card -->
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <div class="card" style="width: 18rem;">
-          <img src="Pics/Canvas-2.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Bang Bang Salmon with Avocado Cucumber Salsa</p>
-          </div>
-        </div>
-      
-      <!-- Card -->
-      <!-- Card -->
+				<div class="card vert-card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="Pics/Vertical Card-3.jpg" class="img-fluid rounded-start vert-card-img" alt="..."
+								style="height: 100%;">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body verticalCards">
+								<h5 class="card-title vert-card-title">Homemade Alfredo Sauce</h5>
+								<p class="card-text vert-text-para">Creamy, silky, homemade Alfredo sauce! Perfectly
+									smooth, wonderfully creamy, and paired with twirly pasta.</p>
+								<a href="" class="link-recipe">Go to Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <div class="card offcanvas-card" style="width: 18rem;">
-          <img src="Pics/Canvas-3.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Ridiculously Good Air Fryer Chicken Breast</p>
-          </div>
-        </div>
-      
-      <!-- Card -->
-      <!-- Card -->
+				<div class="card vert-card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="Pics/Vertical Card-4.jpg" class="img-fluid rounded-start vert-card-img" alt="..."
+								style="height: 100%;">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body verticalCards">
+								<h5 class="card-title vert-card-title">Ridiculously Good Chicken Tacos with Green Sauce
+								</h5>
+								<p class="card-text vert-text-para">Just 20 minutes to get these chicken tacos on the
+									table! Juicy, flavorful, and absolutely mindless in the best way.</p>
+								<a href="" class="link-recipe">Go to Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="card offcanvas-card" style="width: 18rem;">
-          <img src="Pics/Canvas-4.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Cinnamon Sugar Apple Cake</p>
-          </div>
-        </div>
-      
-      <!-- Card -->
-      <!-- Card -->
+			<!-- Social Media Section -->
+			<div class="social-media-container">
+				<div class="social-media-section">
+					<p class="follow">FOLLOW US</p>
+					<a href="https://www.instagram.com/cookie_rookie22/" target="_blank"><img
+							src="Social Media/insta.png" alt="Instagram" class="socialMediaTag"></a>
+					<a href="https://www.facebook.com/CookieRookie22?mibextid=ZbWKwL" target="_blank"><img
+							src="Social Media/Facebook.png" alt="Facebook" class="socialMediaTag"></a>
+					<a href="https://x.com/cookie_rookie22?t=WAxNvfECDRwR72Q51v_TuA&s=09" target="_blank"><img
+							src="Social Media/Twitter.png" alt="twitter" class="socialMediaTag"></a>
+				</div>
+				<div class="input-container">
+					<div class="signup-heading">
+						<p id="signup-subHead">SignUp</p>&nbsp;<p id="email-subHead">for email updates</p>
+					</div>
+					<div class="input-section">
+						<input type="text" placeholder="First Name" class="name">
+						<input type="email" placeholder="Email" class="email">
+						<button class="btn-signup">GO</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
 
-        <div class="card offcanvas-card" style="width: 18rem;">
-          <img src="Pics/Canvas-5.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Quick Homemaade Ramen</p>
-          </div>
-        
-      </div>
-      <!-- Card -->
-      <!-- Card -->
-
-        <div class="card offcanvas-card" style="width: 18rem;">
-          <img src="Pics/Canvas-6.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Ang’s Creamy Tortellini Soup</p>
-          </div>
-        
-      </div>
-      <!-- Card -->
-      <!-- Card -->
-
-        <div class="card offcanvas-card" style="width: 18rem;">
-          <img src="Pics/Canvas-7.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Best Anytime Baked Chicken Meatballs</p>
-          </div>
-        
-      </div>
-      <!-- Card -->
-      <!-- Card -->
-
-        <div class="card offcanvas-card" style="width: 18rem;">
-          <img src="Pics/Canvas-8.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Crockpot Chicken Gnocchi Soup</p>
-          </div>
-        
-      </div>
-      <!-- Card -->
-
-      <!-- Card -->
-        <div class="card offcanvas-card" style="width: 18rem;">
-          <img src="Pics/Canvas-9.jpg" class="card-img-top offcanvas-card-img" alt="...">
-          <div class="card-body">
-            <p class="card-text">Spicy Shrimp Tacos with Garlic Cilantro Lime Slaw</p>
-          </div>
-      </div>
-      <!-- Card -->
-
-      <!-- Card -->
-      <div class="card offcanvas-card" style="width: 18rem;">
-        <img src="Pics/Canvas-10.jpg" class="card-img-top offcanvas-card-img" alt="...">
-        <div class="card-body">
-          <p class="card-text">5 Minute Honey Mustard Sauce</p>
-        </div>
-    </div>
-    <!-- Card -->
-
-    <!-- Card -->
-    <div class="card offcanvas-card" style="width: 18rem;">
-      <img src="Pics/Canvas-11.jpg" class="card-img-top offcanvas-card-img" alt="...">
-      <div class="card-body">
-        <p class="card-text">Browned Butter Chocolate Chip Cookies</p>
-      </div>
-  </div>
-  <!-- Card -->
-
-  <!-- Card -->
-  <div class="card offcanvas-card" style="width: 18rem;">
-    <img src="Pics/Canvas-12.jpg" class="card-img-top offcanvas-card-img" alt="...">
-    <div class="card-body">
-      <p class="card-text">The Best Easy Pasta Salad</p>
-    </div>
-  </div>
-<!-- Card -->
-    </div>
-    </div>
-    </div>
-  </div>
-
-    <!-- vertical Cards -->
-     <div class="container mt-5 vertical-container">
-    <div class="card vert-card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="Pics/Vertical Card-1.jpg" class="img-fluid rounded-start vert-card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title vert-card-title">Bang Bang Salmon with Avocado Cucumber Salsa</h5>
-            <p class="card-text vert-text-para">Bang Bang Salmon! Creamy, sweet, savory, and punchy. Served with some steamy rice and an avocado cucumber salsa. Weeknight perfection!</p>
-            <a href="" class="link-recipe">Go to Recipe</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card vert-card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="Pics/Vertical Card-2.jpg" class="img-fluid rounded-start vert-card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title vert-card-title">Scallion Pancake with Eggs</h5>
-            <p class="card-text vert-text-para">A frozen scallion pancake, loaded with eggs, spinach, avocado and chili crisp! A five minute meal perfect for breakfast, lunch, or dinner!</p>
-            <a href="" class="link-recipe">Go to Recipe</a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card vert-card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="Pics/Vertical Card-3.jpg" class="img-fluid rounded-start vert-card-img" alt="..." style="height: 100%;">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title vert-card-title">Homemade Alfredo Sauce</h5>
-            <p class="card-text vert-text-para">Creamy, silky, homemade Alfredo sauce! Perfectly smooth, wonderfully creamy, and paired with twirly pasta.</p>
-            <a href="" class="link-recipe">Go to Recipe</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card vert-card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="Pics/Vertical Card-4.jpg" class="img-fluid rounded-start vert-card-img" alt="..." style="height: 100%;">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title vert-card-title">Ridiculously Good Chicken Tacos with Green Sauce</h5>
-            <p class="card-text vert-text-para">Just 20 minutes to get these chicken tacos on the table! Juicy, flavorful, and absolutely mindless in the best way.</p>
-            <a href="" class="link-recipe">Go to Recipe</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <!-- Social Media Section -->
-     <div class="social-media-container">
-      <div class="social-media-section">
-        <p class="follow">FOLLOW US</p>
-        <a href="https://www.instagram.com/cookie_rookie22/" target="_blank"><img src="Social Media/insta.png" alt="Instagram" class="socialMediaTag"></a>
-        <a href="https://www.facebook.com/CookieRookie22?mibextid=ZbWKwL" target="_blank"><img src="Social Media/Facebook.png" alt="Facebook" class="socialMediaTag"></a>
-        <a href="https://x.com/cookie_rookie22?t=WAxNvfECDRwR72Q51v_TuA&s=09" target="_blank"><img src="Social Media/Twitter.png" alt="twitter" class="socialMediaTag"></a>
-      </div>
-      <div class="input-container">
-        <div class="signup-heading"><p id="signup-subHead">SignUp</p>&nbsp;<p id="email-subHead">for email updates</p></div>
-        <div class="input-section">
-        <input type="text" placeholder="First Name" class="name">
-        <input type="email" placeholder="Email" class="email">
-        <button class="btn-signup">GO</button>
-        </div>
-      </div>
-     </div>
-     </div>
-    </div>
-
-     <!-- Carousel -->
+		<!-- Carousel -->
       <div class="container">
      <div id="carouselExampleAutoplaying" class="carousel slide mt-2 mb-2" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -386,52 +279,69 @@
       </button>
     </div>
     </div>
-     <!-- Recipe Section -->
-      <div class="recipe-container">
-        <img src="Pics/image.png" alt="" class="top-recipes">
-        <div class="down-recipe-container">
-          <h2 class="cookbook-heading">Cookie Rookie Cookbook</h2>
-          <p class="description">The eBook includes our most popular 25 recipes in a beautiful, easy to download format. Enter your email and we'll send it right over!</p>
-          <div class="input-form">
-            <input type="text" placeholder="First Name" class="recipeSec-1 recipe-input">
-            <input type="text" placeholder="Email" class="recipeSec-2 recipe-input">
-            <button type="submit" class="recipe-submit">Go</button>
-          </div>
-        </div>
-      </div>
-    </main>
 
-    <footer>
-      <div class="footer-content">
-          <ul class="about-content">
-              <p id="about-title">COOKIE ROOKIE</p>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-              <div class="socialMedia">
-                  <a href="https://www.instagram.com/cookie_rookie22/" target="_blank"><img src="Social Media/insta.png" alt="Instagram" class="socialMediaTag"></a>
-                  <a href="https://www.facebook.com/CookieRookie22?mibextid=ZbWKwL" target="_blank"><img src="Social Media/Facebook.png" alt="Facebook" class="socialMediaTag"></a>
-                  <a href="https://x.com/cookie_rookie22?t=WAxNvfECDRwR72Q51v_TuA&s=09" target="_blank"><img src="Social Media/Twitter.png" alt="twitter" class="socialMediaTag"></a>
-              </div>
-          </ul>
-          <ul class="recipe-content">
-              <p id="recipe-title">FOOD & RECIPES</p>
-              <li><a href="#">Italian</a></li>
-              <li><a href="#">Greek</a></li>
-              <li><a href="#">Korean</a></li>
-              <li><a href="#">Desserts</a></li>
-          </ul>
+		<!-- Recipe Section -->
+		<div class="recipe-container">
+			<img src="Pics/image.png" alt="" class="top-recipes">
+			<div class="down-recipe-container">
+				<h2 class="cookbook-heading">Cookie Rookie Cookbook</h2>
+				<p class="description">The eBook includes our most popular 25 recipes in a beautiful, easy to download
+					format. Enter your email and we'll send it right over!</p>
+				<div class="input-form">
+					<input type="text" placeholder="First Name" class="recipeSec-1 recipe-input">
+					<input type="text" placeholder="Email" class="recipeSec-2 recipe-input">
+					<button type="submit" class="recipe-submit">Go</button>
+				</div>
+			</div>
+		</div>
 
-      </div>
-      <div class="contact-us">
-          <div class="differ">
-              <h3 class="contact-heading"><p id="signup">Signup</p><p id="Email-Updates">for Email Updates</p></h3>
-              <input type="email" placeholder="Enter your Email ID" id="contact-input">
-          </div>
-      </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</main>
 
-  <script src="JS/script.js"></script>
+	<footer>
+		<div class="footer-content">
+			<ul class="about-content">
+				<p id="about-title">COOKIE ROOKIE</p>
+				<li><a href="HTML/about.html">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<div class="socialMedia">
+					<a href="https://www.instagram.com/cookie_rookie22/" target="_blank"><img
+							src="Social Media/insta.png" alt="Instagram" class="socialMediaTag"></a>
+					<a href="https://www.facebook.com/CookieRookie22?mibextid=ZbWKwL" target="_blank"><img
+							src="Social Media/Facebook.png" alt="Facebook" class="socialMediaTag"></a>
+					<a href="https://x.com/cookie_rookie22?t=WAxNvfECDRwR72Q51v_TuA&s=09" target="_blank"><img
+							src="Social Media/Twitter.png" alt="twitter" class="socialMediaTag"></a>
+				</div>
+			</ul>
+			<ul class="recipe-content">
+				<p id="recipe-title">FOOD & RECIPES</p>
+				<li><a href="HTML/Italian.html">Italian</a></li>
+				<li><a href="HTML/Greek.html">Greek</a></li>
+				<li><a href="HTML/Korean.html">Korean</a></li>
+				<li><a href="HTML/Dessert.html">Desserts</a></li>
+			</ul>
+
+		</div>
+		<div class="contact-us">
+			<div class="differ">
+				<h3 class="contact-heading">
+					<p id="signup">Signup</p>
+					<p id="Email-Updates">for Email Updates</p>
+				</h3>
+				<input type="email" placeholder="Enter your Email ID" id="contact-input">
+			</div>
+		</div>
+	</footer>
+
+	
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+	<script src="https://files.bpcontent.cloud/2024/11/22/06/20241122064441-PQP6WBIY.js"></script>
+    
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+
+	<script src="JS/login.js"></script>
 </body>
+
 </html>
