@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>Quick and Easy Recipes</title>
+	<link rel="shortcut icon" href="../Pics/favicon.jpg" type="image/x-icon">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quick and Easy Recipes - Cookie Rookie</title>
 </head>
 <body>
-    <header>
-		<!-- DISMISSIBLE ALERT -->
-		<div class="alert alert-primary alert-dismissible fade show" role="alert">
-			<p id="alert-message">OUR RECIPE, &nbsp;SIGN UP</p>
-			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="btn-closed"></button>
-		</div>
-
+	<header>
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="../index.html">
 					<p class="main-heading">cOOkie</p>&nbsp;<p class="main-heading" style="color: #7d7098;">rOOkie</p>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,10 +23,10 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+							<a class="nav-link active" aria-current="page" href="../index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="HTML/about.html">About</a>
+							<a class="nav-link active" href="about.html">About</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link active" href="#">Recipes</a>
@@ -85,8 +81,79 @@
 		</nav>
 
 	</header>
+
     <main>
-        <p class="recipe-heading">Quick And Easy Recipe</p>
+        <p class="round-recipe-heading my-3">Quick And Easy Recipe</p>
+		<div class="round-recipe-page-container">
+		<div class="row row-cols-1 row-cols-md-2 g-4">
+			<div class="col">
+				<div class="card mb-3 sub-cards" style="max-width: 540px;">
+					<div class="row g-0">
+					  <div class="col-md-4">
+						<img src="../Pics/quick_easy_maggi.jpeg" class="img-fluid rounded-start" alt="...">
+					  </div>
+					  <div class="col-md-8">
+						<div class="card-body">
+						  <h5 class="card-title">Maggie</h5>
+						  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+			<div class="col">
+				<div class="card mb-3 sub-cards" style="max-width: 540px;">
+					<div class="row g-0">
+					  <div class="col-md-4">
+						<img src="../Pics/quick_easy_banana_toast.jpeg" class="img-fluid rounded-start" alt="...">
+					  </div>
+					  <div class="col-md-8">
+						<div class="card-body">
+						  <h5 class="card-title">Banana Toast</h5>
+						  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+			<div class="col">
+				<div class="card mb-3 sub-cards" style="max-width: 540px;">
+					<div class="row g-0">
+					  <div class="col-md-4">
+						<img src="../Pics/quick_easy_avocardo.jpeg" class="img-fluid rounded-start" alt="...">
+					  </div>
+					  <div class="col-md-8">
+						<div class="card-body">
+						  <h5 class="card-title">Avocardo Toast</h5>
+						  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card mb-3 sub-cards" style="max-width: 540px;">
+					<div class="row g-0">
+					  <div class="col-md-4">
+						<img src="../Pics/quick_easy_veggie_omellete.jpeg" class="img-fluid rounded-start" alt="...">
+					  </div>
+					  <div class="col-md-8">
+						<div class="card-body">
+						  <h5 class="card-title">Veggie Omellete</h5>
+						  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		  </div>
+		  </div>
     </main>
+
+	<!-- Chat Bot -->
+	<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+	<script src="https://files.bpcontent.cloud/2024/11/22/06/20241122064441-PQP6WBIY.js"></script>
+
+	<script src="../JS/script.js"></script>
 </body>
 </html>
