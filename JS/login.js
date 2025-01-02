@@ -13,7 +13,7 @@ btn.onclick = (event) => {
         console.log("No Field entered")
     }
     else if (username.value===myusername && password.value===mypassword){
-        loginPage.style.display = "none";
+        window.location.href = "index.html";
 
     }
     else {

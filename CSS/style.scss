@@ -195,10 +195,6 @@ label {
 
 .pic-cards {
     cursor: pointer;
-
-    &:hover {
-        opacity: 60%;
-    }
 }
 
 .round-card {
@@ -228,6 +224,15 @@ label {
     font-weight: bold;
     font-size: 14px;
 }
+
+.vertical-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50vh; 
+    margin-bottom:120px;
+}
+
 
 .search-recipes {
     height: 120px;
@@ -509,13 +514,97 @@ li a {
     border: 1px solid #fff;
     outline: none;
 }
+.bxs-star{
+    color: #fff;
+    font-size: 45px;
+}
+.review-heading{
+    color: #fff;
+    font-family: "Qwigley", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.review-container label{
+    position: relative;
+    top: 62px;
+    font-size: 80px;
+}
 .review-container{
-    height: 150px;
+    height: 250px;
+    display: flex;
+    padding: 0 120px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7d7098;
 }
 .review-container i{
-    color: yellow;
     font-size: 25px;
     margin-right: 10px;
+    cursor: pointer;
+}
+.review-heading{
+    font-size: 30px;
+    position: relative;
+    top: 10%;
+}
+#review-textarea{
+    width: 250px;
+    height: 100px;
+    margin: 20px 0;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+.review-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-btn{
+    height: 35px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+// Responsiveness
+
+@media only screen and (max-width: 450px){
+    .navbar-brand{
+        position: absolute;
+        left: 0;
+    }
+    .quote1,.quote2{
+        font-size: 14px;
+    }
+    .social-media-container{
+        gap:15rem;
+    }
+    .input-container{
+        display: none;
+    }
+    #carouselExampleAutoplaying{
+        display: none;
+    }
+    .recipe-content,.about-content{
+        display: none;
+    }
+    .round-recipe-cards{
+        width: 75vw;
+    }
+    .contact-us{
+        position: absolute;
+        left: 10%;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    #contact-input{
+        width: 250px;
+    }
+    #Email-Updates,#signup{
+        font-size: 20px;
+    }
 }
 //Round Recipe Pages
 .round-recipe-heading{
@@ -524,16 +613,38 @@ li a {
     text-align: center;
 }
 .round-recipe-page-container{
+    background-image: url("../Pics/BgImage.jpg");
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-image: url("../Pics/BgImage.jpg");
-}
-.sub-cards{
-    margin: 15px 65px;
 }
 
+.round-recipe-page-subcontainer {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:10px;
+    align-items: center;
+    width: 100%;
+}
 
+.toggle-card-text{
+    display: none;
+}
+.toggle-btn{
+    height: 16px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: gray;
+    color: #fff;
+    border-radius: 30px;
+}
 // About Us Page
 
 .about-me-body{
@@ -568,3 +679,61 @@ li a {
 .about-us-image{
     border-radius: 50%;
 }
+
+.recipe-heading{
+    font-size: 50px;
+    font-weight: 1000;
+    font-family: 'Charm';
+    margin-left: 65px;
+    margin-top: 40px;
+    color: #7d7098;
+}
+
+.info-box {
+    background-color: #fff;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 16px;
+    max-width: 500px;
+    font-family: Domaine Display,Georgia,Cambria,Times New Roman,Times,serif;
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .info-item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .info-item strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+.recipe-image{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.Recipe-box{
+    background-color: #e7e7e7;
+    border: 0px solid ;
+    border-radius: 5px;
+    padding: 16px;
+    max-width: 700px;
+    font-family: Domaine Display,Georgia,Cambria,Times New Roman,Times,serif;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+  
